@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Nested HTML Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul, ol, dl {
+            background: #da1717;
+            color: white;
+            font-size: 20px;
+            
+        }
+        li {
+            
+        }
+        dl {
+            background: #3f0abb;
+            /* padding: 10px; */
+        }
+        dt {
+            font-weight: bold;
+            /* margin-top: 10px; */
+        }
+        dd {
+            /* margin: 5px 0 10px 20px; */
+        }
+        .nested-list {
+            /* margin-left: 20px; */
+        }
+        ul{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Nested HTML Lists</h1>
+    
+    <ul>
+        <li>Fruits
+            <ul class="nested-list">
+                <li>Apple</li>
+                <li>Banana
+                    <dl class="nested-list">
+                        <dt>Nutrition</dt>
+                        <dd>High in potassium and vitamins.</dd>
+                        <dt>Varieties</dt>
+                        <dd>Cavendish, Red, Lady Finger</dd>
+                    </dl>
+                </li>
+                <li>Cherry</li>
+                <li>Berries
+                    <ol class="nested-list">
+                        <li>Strawberry</li>
+                        <li>Blueberry</li>
+                        <li>Raspberry
+                            <ul class="nested-list">
+                                <li>Red Raspberry</li>
+                                <li>Black Raspberry</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </li><br><hr><br>
+        <li>Vegetables
+            <ul class="nested-list">
+                <li>Root Vegetables
+                    <ol class="nested-list">
+                        <li>Carrot
+                            <dl class="nested-list">
+                                <dt>Nutrition</dt>
+                                <dd>Rich in beta-carotene.</dd>
+                                <dt>Uses</dt>
+                                <dd>Salads, Stews, Juices</dd>
+                            </dl>
+                        </li>
+                        <li>Beetroot</li>
+                    </ol>
+                </li>
+                <li>Leafy Greens
+                    <ul class="nested-list">
+                        <li>Spinach
+                            <dl class="nested-list">
+                                <dt>Nutrition</dt>
+                                <dd>High in iron and vitamins A, C, and K.</dd>
+                                <dt>Uses</dt>
+                                <dd>Salads, Smoothies, Soups</dd>
+                            </dl>
+                        </li>
+                        <li>Kale</li>
+                    </ul>
+                </li>
+            </ul>
+        </li> <br><hr><br>
+        <li>Dairy Products
+            <dl class="nested-list">
+                <dt>Milk</dt>
+                <dd>A white liquid produced by the mammary glands of mammals.
+                    <ul class="nested-list">
+                        <li>Cow's Milk</li>
+                        <li>Goat's Milk</li>
+                    </ul>
+                </dd>
+                <dt>Cheese</dt>
+                <dd>A dairy product, derived from milk and produced in a wide range of flavors, textures, and forms.
+                    <ol class="nested-list">
+                        <li>Cheddar</li>
+                        <li>Brie</li>
+                        <li>Gouda</li>
+                    </ol>
+                </dd>
+                <dt>Yogurt</dt>
+                <dd>A food produced by bacterial fermentation of milk.
+                    <ul class="nested-list">
+                        <li>Greek Yogurt</li>
+                        <li>Regular Yogurt</li>
+                    </ul>
+                </dd>
+            </dl>
+        </li><br><hr><br>
+        <li>Grains
+            <ul class="nested-list">
+                <li>Rice
+                    <ol class="nested-list">
+                        <li>White Rice</li>
+                        <li>Brown Rice</li>
+                    </ol>
+                </li>
+                <li>Wheat
+                    <ul class="nested-list">
+                        <li>Bread</li>
+                        <li>Pasta
+                            <ul class="nested-list">
+                                <li>Spaghetti</li>
+                                <li>Macaroni</li>
+                                <li>Fusilli</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
